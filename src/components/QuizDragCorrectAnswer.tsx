@@ -1,8 +1,8 @@
 import { StyledGrid } from '../styles';
 import React, {useEffect, useState} from "react";
-import {data} from "../Data/dictionary";
+import {data, arrEnglishWords} from "../Data/dictionary";
 import  { DragEvent ,useRef} from 'react';
-giimport {isNumber} from "util";
+
 // import {workerData} from "worker_threads";
 
 // let objWords = {
@@ -13,8 +13,10 @@ giimport {isNumber} from "util";
 //     "5":"они",
 //     "6":"оно"
 // }
+//
 
-let arrRussianWords: string[]  = ["я","ты", "он", "она" ,"они", "оно"];
+// let arrRussianWords: string[]  = ["я","ты", "он", "она" ,"они", "оно"];
+// let arrEnglishWords: string[]  = ["i","you", "he", "she" ,"they", "it"];
 
 let words = data[0].russian;
 let englishWords = Object.keys(words).sort(() => (Math.random() > .5) ? 1 : -1);
@@ -41,7 +43,7 @@ const QuizDragCorrectAnswer: React.FC   = () => {
          let data = ev.dataTransfer.getData("text");
          // @ts-ignore
          if(document.getElementById(data) && ev.nativeEvent.target.children.length === 0){
-             let element: HTMLElement | null = document.getElementById(data);
+             let element :HTMLElement | null = document.getElementById(data);
              // @ts-ignore
              ev!.currentTarget!.appendChild(element);
          }
@@ -201,3 +203,5 @@ export default QuizDragCorrectAnswer;
 //_________________________________________________
 
 // TODO:: make draggable items drag back
+//TODO :: make random left column too
+//TODO:: styling 1) on hover rows scale 2) true answer background false answer background

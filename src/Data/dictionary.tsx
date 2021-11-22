@@ -10,3 +10,5 @@ export const data = [
   },
  }
 ]
+export let arrRussianWords: string[]  = ["я","ты", "он", "она" ,"они", "оно"];
+export let arrEnglishWords: string[]  = ["i","you", "he", "she" ,"they", "it"];

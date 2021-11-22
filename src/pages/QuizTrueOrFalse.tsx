@@ -1,19 +1,19 @@
 import React from "react";
 import {data} from "../Data/dictionary";
 import SectionWrapper from "../components/SectionWrapper";
-import QuizDragCorrectAnswer from "../components/QuizDragCorrectAnswer";
+import QuizTrueOrFalseMainComponent from "../components/QuizTrueOrFalseMainComponent";
 
-function QuizDragAnAnswer(){
+
+function QuizTrueOrFalse(){
     const words = data[0];
     return(
         <>
             <main>
-                <SectionWrapper title="Quiz - drag the correct answer">
-                    <QuizDragCorrectAnswer/>
+                <SectionWrapper title="Quiz - true or false">
+                    <QuizTrueOrFalseMainComponent/>
                 </SectionWrapper>
             </main>
         </>
     )
 }
-export default QuizDragAnAnswer;
-
+export default QuizTrueOrFalse;
