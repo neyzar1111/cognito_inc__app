@@ -24,8 +24,8 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--near-black);
-    color: var(--white);
+    background-color: var(--light-grey);
+    color: var(--near-black);
     font-family: var(--font);
     font-size: var(--fz-md);
   }
@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     color: var(--white);
     font-size: var(--fz-sm);
     font-weight: 700;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-lg);
 
     &:hover,
     &:focus {

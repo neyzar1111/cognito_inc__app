@@ -16,6 +16,7 @@ const StyledGrid = styled.ul`
   .grid__item {
     background-color: var(--dark-grey);
     border-radius: var(--border-radius-subtle);
+    color: var(--white);
     transition: background-color 0.3s ease;
     cursor: default;
   }
@@ -28,7 +29,7 @@ const StyledGrid = styled.ul`
   }
 .word__container{
    padding: 10px 50px;
-   border: 1px solid var(--near-black);
+   border: 1px solid var(--light-grey);
    min-height: 44px
 }
 

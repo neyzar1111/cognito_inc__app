@@ -10,6 +10,8 @@ const variables = css`
     --white: #ffffff;
     --pink: #ff0a66;
     --dark-pink: #82747d;
+    --light-green: #7be07b;
+    --light-red: #ff5274;
 
     --font: 'Circular Std', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
